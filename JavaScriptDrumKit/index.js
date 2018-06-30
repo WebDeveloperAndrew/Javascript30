@@ -38,7 +38,7 @@ function drum(e) {
         if (keys[i].getAttribute("data-key") == key) {
             var temp = keys[i];
             keys[i].classList.add("playing");
-            setTimeout(function (temnp) { temp.classList.remove("playing"); }, 100);
+            setTimeout(function () { temp.classList.remove("playing"); }, 100);
         }
     }
     audio.play();
